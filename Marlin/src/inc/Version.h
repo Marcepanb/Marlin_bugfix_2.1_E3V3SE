@@ -25,7 +25,7 @@
  * Release version. Leave the Marlin version or apply a custom scheme.
  */
 #ifndef SHORT_BUILD_VERSION
-  #define SHORT_BUILD_VERSION "v2.1.x krasnaya_5a"
+  #define SHORT_BUILD_VERSION "Marlin v2.1.x"
 #endif
 
 /**
@@ -82,7 +82,7 @@
  * providing the source code to your customers.)
  */
 #ifndef SOURCE_CODE_URL
-  #define SOURCE_CODE_URL "https://github.com/navaismo/Marlin_bugfix_2.1_E3V3SE"
+  #define SOURCE_CODE_URL "https://github.com/Marcepanb/Marlin_bugfix_2.1_E3V3SE"
 #endif
 
 /**
@@ -97,7 +97,7 @@
    * documentation about a specific Marlin release. Displayed in the Info Menu.
    */
 #ifndef WEBSITE_URL
-  #define WEBSITE_URL "https://github.com/navaismo"
+  #define WEBSITE_URL "https://github.com/Marcepanb"
 #endif
 
 /**

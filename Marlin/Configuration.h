@@ -756,9 +756,9 @@
     #define DEFAULT_KI_LIST {   1.08,   1.08 }
     #define DEFAULT_KD_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_KP 20.49
-    #define DEFAULT_KI 3.93
-    #define DEFAULT_KD 26.68
+    #define DEFAULT_KP 28.14
+    #define DEFAULT_KI 2.41
+    #define DEFAULT_KD 82.17
 
   #endif
 #else
@@ -857,9 +857,9 @@
 
   // 120V 250W silicone heater into 4mm borosilicate (MendelMax 1.5+)
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
-  #define DEFAULT_BED_KP 123.71
-  #define DEFAULT_BED_KI 14.29
-  #define DEFAULT_BED_KD 713.77
+  #define DEFAULT_BED_KP 179.94
+  #define DEFAULT_BED_KI 21.22
+  #define DEFAULT_BED_KD 1017.23
 
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
@@ -1362,7 +1362,7 @@
  * Override with M92 (when enabled below)
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT     { 80, 80, 400, 715.12 } // { 80, 80, 400, 424.9 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT     { 80, 80, 400, 850 } // { 80, 80, 400, 424.9 }
 
 /**
  * Enable support for M92. Disable to save at least ~530 bytes of flash.
@@ -1387,7 +1387,7 @@
  * Override with M201
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 5000, 5000, 5000, 5000 }
+#define DEFAULT_MAX_ACCELERATION      { 4000, 4000, 500, 5000 }
 
   #define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2
 #if ENABLED(LIMITED_MAX_ACCEL_EDITING)
@@ -2618,17 +2618,17 @@
 #define PREHEAT_1_TEMP_CHAMBER 35
 #define PREHEAT_1_FAN_SPEED    0//255 // Value from 0 to 255
 
-#define PREHEAT_2_LABEL       "TPU"
-#define PREHEAT_2_TEMP_HOTEND 230
-#define PREHEAT_2_TEMP_BED     70
+#define PREHEAT_2_LABEL       "PETG"
+#define PREHEAT_2_TEMP_HOTEND 240
+#define PREHEAT_2_TEMP_BED     90
 #define PREHEAT_2_TEMP_CHAMBER 35
 #define PREHEAT_2_FAN_SPEED    0//255 // Value from 0 to 255
 
 // #define EXTRA_PREHEAT_LABELS   // Enable LCD Menu to Configure 2 Extra Preheat Materials
 #if ENABLED(EXTRA_PREHEAT_LABELS)
-  #define PREHEAT_3_LABEL       "PETG"
-  #define PREHEAT_3_TEMP_HOTEND 240
-  #define PREHEAT_3_TEMP_BED     90
+  #define PREHEAT_3_LABEL       "TPU"
+  #define PREHEAT_3_TEMP_HOTEND 230
+  #define PREHEAT_3_TEMP_BED     70
   #define PREHEAT_3_TEMP_CHAMBER 35
   #define PREHEAT_3_FAN_SPEED    0//255 // Value from 0 to 255
 

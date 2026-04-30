@@ -78,8 +78,8 @@ lin 3D Printer Firmware
 #define CORP_WEBSITE WEBSITE_URL
 #endif
 
-#define CORP_WEBSITE_C "github.com/navaismo"
-#define CORP_WEBSITE_E "github.com/navaismo"
+#define CORP_WEBSITE_C "Marcepan Q"
+#define CORP_WEBSITE_E "Marcepan Q"
 #define PAUSE_HEAT
 #define CHECKFILAMENT true
 

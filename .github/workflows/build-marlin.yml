@@ -15,7 +15,7 @@ on:
         description: "X_ROUTINE_AUTO_OFFSET (Z offset with X pattern)"
         required: true
         type: boolean
-        default: false
+        default: true
 
       d_routine_auto_offset:
         description: "D_ROUTINE_AUTO_OFFSET (Z offset with Delta pattern)"
@@ -39,7 +39,7 @@ on:
         description: "DWIN_ZHOME_MENU (Z menu after homing)"
         required: true
         type: boolean
-        default: true
+        default: false
 
       extra_preheat_labels:
         description: "EXTRA_PREHEAT_LABELS (extra preheats)"
@@ -69,25 +69,25 @@ on:
         description: "INPUT_SHAPING_X"
         required: true
         type: boolean
-        default: false
+        default: true
 
       input_shaping_y:
         description: "INPUT_SHAPING_Y"
         required: true
         type: boolean
-        default: false
+        default: true
 
       dwin_input_shaping_menu:
         description: "DWIN_INPUT_SHAPING_MENU (Input Shaping menu)"
         required: true
         type: boolean
-        default: false
+        default: true
 
       one_click_print:
         description: "ONE_CLICK_PRINT"
         required: true
         type: boolean
-        default: true
+        default: false
 
 jobs:
   build:
